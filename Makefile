@@ -9,15 +9,15 @@ all :
 
 install :
 	install -d -m 0755 $(DESTDIR)$(pkgdatadir)/cidToUnicode
-	install -m 0644 cidToUnicode/* $(DESTDIR)$(pkgdatadir)/cidToUnicode
+	install -m 0644 $(cid-to-unicode-files) $(DESTDIR)$(pkgdatadir)/cidToUnicode
 	install -d -m 0755 $(DESTDIR)$(pkgdatadir)/nameToUnicode
-	install -m 0644 nameToUnicode/* $(DESTDIR)$(pkgdatadir)/nameToUnicode
+	install -m 0644 $(name-to-unicode-files) $(DESTDIR)$(pkgdatadir)/nameToUnicode
 	install -d -m 0755 $(DESTDIR)$(pkgdatadir)/unicodeMap
-	install -m 0644 unicodeMap/* $(DESTDIR)$(pkgdatadir)/unicodeMap
+	install -m 0644 $(unicode-map-files) $(DESTDIR)$(pkgdatadir)/unicodeMap
 
-	for f in cMap/*; do						\
-		install -d -m 755 $(DESTDIR)$(pkgdatadir)/$$f;		\
-		install -m 644 $$f/* $(DESTDIR)$(pkgdatadir)/$$f;	\
+	for f in $(cmap-files); do					    \
+		install -d -m 0755 $(DESTDIR)$(pkgdatadir)/$$(dirname $$f); \
+		install -m 0644 $$f $(DESTDIR)$(pkgdatadir)/$$f;	    \
 	done
 
 distdir : $(DISTFILES)
@@ -35,10 +35,7 @@ dist : distdir
 clean :
 	rm -rf $(distdir)
 
-DISTFILES =					\
-	Makefile				\
-	README					\
-	COPYING					\
+unicode-map-files =				\
 	unicodeMap/GBK				\
 	unicodeMap/Big5				\
 	unicodeMap/Shift-JIS			\
@@ -50,6 +47,8 @@ DISTFILES =					\
 	unicodeMap/ISO-2022-CN			\
 	unicodeMap/Big5ascii			\
 	unicodeMap/ISO-2022-JP			\
+
+cmap-files =					\
 	cMap/Adobe-Korea1/KSC-EUC-V		\
 	cMap/Adobe-Korea1/UniKS-UCS2-H		\
 	cMap/Adobe-Korea1/KSC-Johab-V		\
@@ -206,9 +205,22 @@ DISTFILES =					\
 	cMap/Adobe-GB1/UniGB-UTF8-H		\
 	cMap/Adobe-GB1/GB-EUC-H			\
 	cMap/Adobe-GB1/Adobe-GB1-0		\
+
+name-to-unicode-files =				\
 	nameToUnicode/Thai			\
 	nameToUnicode/Bulgarian			\
+
+cid-to-unicode-files =				\
 	cidToUnicode/Adobe-GB1			\
 	cidToUnicode/Adobe-CNS1			\
 	cidToUnicode/Adobe-Japan1		\
 	cidToUnicode/Adobe-Korea1
+
+DISTFILES =					\
+	Makefile				\
+	README					\
+	COPYING					\
+	$(unicode-map-files)			\
+	$(cmap-files)				\
+	$(name-to-unicode-files)		\
+	$(cid-to-unicode-files)
