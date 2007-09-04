@@ -16,7 +16,7 @@ install :
 	install -m 0644 $(unicode-map-files) $(DESTDIR)$(pkgdatadir)/unicodeMap
 
 	for f in $(cmap-files); do					    \
-		install -d -m 0755 $(DESTDIR)$(pkgdatadir)/$$(dirname $$f); \
+		install -d -m 0755 $(DESTDIR)$(pkgdatadir)/`dirname $$f`; \
 		install -m 0644 $$f $(DESTDIR)$(pkgdatadir)/$$f;	    \
 	done
 
