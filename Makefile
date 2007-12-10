@@ -47,6 +47,13 @@ unicode-map-files =				\
 	unicodeMap/ISO-2022-CN			\
 	unicodeMap/Big5ascii			\
 	unicodeMap/ISO-2022-JP			\
+	unicodeMap/ISO-8859-6			\
+	unicodeMap/ISO-8859-7			\
+	unicodeMap/ISO-8859-8			\
+	unicodeMap/ISO-8859-9			\
+	unicodeMap/Latin2			\
+	unicodeMap/Windows-1255
+
 
 cmap-files =							\
 	cMap/Adobe-CNS1/Adobe-CNS1-0				\
@@ -290,6 +297,7 @@ cmap-files =							\
 name-to-unicode-files =				\
 	nameToUnicode/Thai			\
 	nameToUnicode/Bulgarian			\
+	nameToUnicode/Greek
 
 cid-to-unicode-files =				\
 	cidToUnicode/Adobe-GB1			\
