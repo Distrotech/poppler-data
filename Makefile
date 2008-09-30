@@ -200,7 +200,6 @@ cmap-files =							\
 	cMap/Adobe-Japan1/Adobe-Japan1-PS-H			\
 	cMap/Adobe-Japan1/Adobe-Japan1-PS-V			\
 	cMap/Adobe-Japan1/Adobe-Japan1-UCS2			\
-	cMap/Adobe-Japan1/Adobe-Japan2-0			\
 	cMap/Adobe-Japan1/EUC-H					\
 	cMap/Adobe-Japan1/EUC-V					\
 	cMap/Adobe-Japan1/Ext-H					\
@@ -256,6 +255,7 @@ cmap-files =							\
 	cMap/Adobe-Japan1/UniJISX0213-UTF32-V			\
 	cMap/Adobe-Japan1/V					\
 	cMap/Adobe-Japan1/WP-Symbol				\
+	cMap/Adobe-Japan2/Adobe-Japan2-0			\
 	cMap/Adobe-Korea1/Adobe-Korea1-0			\
 	cMap/Adobe-Korea1/Adobe-Korea1-1			\
 	cMap/Adobe-Korea1/Adobe-Korea1-2			\
