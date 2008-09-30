@@ -303,6 +303,7 @@ cid-to-unicode-files =				\
 	cidToUnicode/Adobe-GB1			\
 	cidToUnicode/Adobe-CNS1			\
 	cidToUnicode/Adobe-Japan1		\
+	cidToUnicode/Adobe-Japan2		\
 	cidToUnicode/Adobe-Korea1
 
 DISTFILES =					\
