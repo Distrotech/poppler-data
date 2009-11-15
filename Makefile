@@ -62,6 +62,7 @@ cmap-files =							\
 	cMap/Adobe-CNS1/Adobe-CNS1-3				\
 	cMap/Adobe-CNS1/Adobe-CNS1-4				\
 	cMap/Adobe-CNS1/Adobe-CNS1-5				\
+	cMap/Adobe-CNS1/Adobe-CNS1-6				\
 	cMap/Adobe-CNS1/B5-H					\
 	cMap/Adobe-CNS1/B5pc-H					\
 	cMap/Adobe-CNS1/B5pc-V					\
