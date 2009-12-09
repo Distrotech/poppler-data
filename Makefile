@@ -1,5 +1,5 @@
 PACKAGE    = poppler-data
-VERSION    = 0.3.1
+VERSION    = 0.4.0
 distdir    = $(PACKAGE)-$(VERSION)
 prefix     = /usr/local
 datadir    = $(prefix)/share
@@ -63,8 +63,16 @@ cmap-files =							\
 	cMap/Adobe-CNS1/Adobe-CNS1-4				\
 	cMap/Adobe-CNS1/Adobe-CNS1-5				\
 	cMap/Adobe-CNS1/Adobe-CNS1-6				\
+	cMap/Adobe-CNS1/Adobe-CNS1-B5pc				\
+	cMap/Adobe-CNS1/Adobe-CNS1-ETen-B5			\
+	cMap/Adobe-CNS1/Adobe-CNS1-H-CID			\
+	cMap/Adobe-CNS1/Adobe-CNS1-H-Host			\
+	cMap/Adobe-CNS1/Adobe-CNS1-H-Mac			\
+	cMap/Adobe-CNS1/Adobe-CNS1-UCS2				\
 	cMap/Adobe-CNS1/B5-H					\
 	cMap/Adobe-CNS1/B5pc-H					\
+	cMap/Adobe-CNS1/B5pc-UCS2				\
+	cMap/Adobe-CNS1/B5pc-UCS2C				\
 	cMap/Adobe-CNS1/B5pc-V					\
 	cMap/Adobe-CNS1/B5-V					\
 	cMap/Adobe-CNS1/CNS1-H					\
@@ -74,6 +82,7 @@ cmap-files =							\
 	cMap/Adobe-CNS1/CNS-EUC-H				\
 	cMap/Adobe-CNS1/CNS-EUC-V				\
 	cMap/Adobe-CNS1/ETen-B5-H				\
+	cMap/Adobe-CNS1/ETen-B5-UCS2				\
 	cMap/Adobe-CNS1/ETen-B5-V				\
 	cMap/Adobe-CNS1/ETenms-B5-H				\
 	cMap/Adobe-CNS1/ETenms-B5-V				\
@@ -91,6 +100,8 @@ cmap-files =							\
 	cMap/Adobe-CNS1/HKm471-B5-V				\
 	cMap/Adobe-CNS1/HKscs-B5-H				\
 	cMap/Adobe-CNS1/HKscs-B5-V				\
+	cMap/Adobe-CNS1/UCS2-B5pc				\
+	cMap/Adobe-CNS1/UCS2-ETen-B5				\
 	cMap/Adobe-CNS1/UniCNS-UCS2-H				\
 	cMap/Adobe-CNS1/UniCNS-UCS2-V				\
 	cMap/Adobe-CNS1/UniCNS-UTF16-H				\
@@ -105,16 +116,25 @@ cmap-files =							\
 	cMap/Adobe-GB1/Adobe-GB1-3				\
 	cMap/Adobe-GB1/Adobe-GB1-4				\
 	cMap/Adobe-GB1/Adobe-GB1-5				\
+	cMap/Adobe-GB1/Adobe-GB1-GBK-EUC			\
+	cMap/Adobe-GB1/Adobe-GB1-GBpc-EUC			\
+	cMap/Adobe-GB1/Adobe-GB1-H-CID				\
+	cMap/Adobe-GB1/Adobe-GB1-H-Host				\
+	cMap/Adobe-GB1/Adobe-GB1-H-Mac				\
+	cMap/Adobe-GB1/Adobe-GB1-UCS2				\
 	cMap/Adobe-GB1/GB-EUC-H					\
 	cMap/Adobe-GB1/GB-EUC-V					\
 	cMap/Adobe-GB1/GB-H					\
 	cMap/Adobe-GB1/GBK2K-H					\
 	cMap/Adobe-GB1/GBK2K-V					\
 	cMap/Adobe-GB1/GBK-EUC-H				\
+	cMap/Adobe-GB1/GBK-EUC-UCS2				\
 	cMap/Adobe-GB1/GBK-EUC-V				\
 	cMap/Adobe-GB1/GBKp-EUC-H				\
 	cMap/Adobe-GB1/GBKp-EUC-V				\
 	cMap/Adobe-GB1/GBpc-EUC-H				\
+	cMap/Adobe-GB1/GBpc-EUC-UCS2				\
+	cMap/Adobe-GB1/GBpc-EUC-UCS2C				\
 	cMap/Adobe-GB1/GBpc-EUC-V				\
 	cMap/Adobe-GB1/GBT-EUC-H				\
 	cMap/Adobe-GB1/GBT-EUC-V				\
@@ -123,6 +143,8 @@ cmap-files =							\
 	cMap/Adobe-GB1/GBTpc-EUC-V				\
 	cMap/Adobe-GB1/GBT-V					\
 	cMap/Adobe-GB1/GB-V					\
+	cMap/Adobe-GB1/UCS2-GBK-EUC				\
+	cMap/Adobe-GB1/UCS2-GBpc-EUC				\
 	cMap/Adobe-GB1/UniGB-UCS2-H				\
 	cMap/Adobe-GB1/UniGB-UCS2-V				\
 	cMap/Adobe-GB1/UniGB-UTF16-H				\
@@ -143,8 +165,11 @@ cmap-files =							\
 	cMap/Adobe-Japan1/90msp-RKSJ-H				\
 	cMap/Adobe-Japan1/90msp-RKSJ-V				\
 	cMap/Adobe-Japan1/90ms-RKSJ-H				\
+	cMap/Adobe-Japan1/90ms-RKSJ-UCS2			\
 	cMap/Adobe-Japan1/90ms-RKSJ-V				\
 	cMap/Adobe-Japan1/90pv-RKSJ-H				\
+	cMap/Adobe-Japan1/90pv-RKSJ-UCS2			\
+	cMap/Adobe-Japan1/90pv-RKSJ-UCS2C			\
 	cMap/Adobe-Japan1/90pv-RKSJ-V				\
 	cMap/Adobe-Japan1/Add-H					\
 	cMap/Adobe-Japan1/Add-RKSJ-H				\
@@ -157,6 +182,14 @@ cmap-files =							\
 	cMap/Adobe-Japan1/Adobe-Japan1-4			\
 	cMap/Adobe-Japan1/Adobe-Japan1-5			\
 	cMap/Adobe-Japan1/Adobe-Japan1-6			\
+	cMap/Adobe-Japan1/Adobe-Japan1-90ms-RKSJ		\
+	cMap/Adobe-Japan1/Adobe-Japan1-90pv-RKSJ		\
+	cMap/Adobe-Japan1/Adobe-Japan1-H-CID			\
+	cMap/Adobe-Japan1/Adobe-Japan1-H-Host			\
+	cMap/Adobe-Japan1/Adobe-Japan1-H-Mac			\
+	cMap/Adobe-Japan1/Adobe-Japan1-PS-H			\
+	cMap/Adobe-Japan1/Adobe-Japan1-PS-V			\
+	cMap/Adobe-Japan1/Adobe-Japan1-UCS2			\
 	cMap/Adobe-Japan1/EUC-H					\
 	cMap/Adobe-Japan1/EUC-V					\
 	cMap/Adobe-Japan1/Ext-H					\
@@ -176,6 +209,8 @@ cmap-files =							\
 	cMap/Adobe-Japan1/RKSJ-H				\
 	cMap/Adobe-Japan1/RKSJ-V				\
 	cMap/Adobe-Japan1/Roman					\
+	cMap/Adobe-Japan1/UCS2-90ms-RKSJ			\
+	cMap/Adobe-Japan1/UCS2-90pv-RKSJ			\
 	cMap/Adobe-Japan1/UniHojo-UCS2-H			\
 	cMap/Adobe-Japan1/UniHojo-UCS2-V			\
 	cMap/Adobe-Japan1/UniHojo-UTF16-H			\
@@ -213,6 +248,12 @@ cmap-files =							\
 	cMap/Adobe-Korea1/Adobe-Korea1-0			\
 	cMap/Adobe-Korea1/Adobe-Korea1-1			\
 	cMap/Adobe-Korea1/Adobe-Korea1-2			\
+	cMap/Adobe-Korea1/Adobe-Korea1-H-CID			\
+	cMap/Adobe-Korea1/Adobe-Korea1-H-Host			\
+	cMap/Adobe-Korea1/Adobe-Korea1-H-Mac			\
+	cMap/Adobe-Korea1/Adobe-Korea1-KSCms-UHC		\
+	cMap/Adobe-Korea1/Adobe-Korea1-KSCpc-EUC		\
+	cMap/Adobe-Korea1/Adobe-Korea1-UCS2			\
 	cMap/Adobe-Korea1/KSC-EUC-H				\
 	cMap/Adobe-Korea1/KSC-EUC-V				\
 	cMap/Adobe-Korea1/KSC-H					\
@@ -221,10 +262,15 @@ cmap-files =							\
 	cMap/Adobe-Korea1/KSCms-UHC-H				\
 	cMap/Adobe-Korea1/KSCms-UHC-HW-H			\
 	cMap/Adobe-Korea1/KSCms-UHC-HW-V			\
+	cMap/Adobe-Korea1/KSCms-UHC-UCS2			\
 	cMap/Adobe-Korea1/KSCms-UHC-V				\
 	cMap/Adobe-Korea1/KSCpc-EUC-H				\
+	cMap/Adobe-Korea1/KSCpc-EUC-UCS2			\
+	cMap/Adobe-Korea1/KSCpc-EUC-UCS2C			\
 	cMap/Adobe-Korea1/KSCpc-EUC-V				\
 	cMap/Adobe-Korea1/KSC-V					\
+	cMap/Adobe-Korea1/UCS2-KSCms-UHC			\
+	cMap/Adobe-Korea1/UCS2-KSCpc-EUC			\
 	cMap/Adobe-Korea1/UniKS-UCS2-H				\
 	cMap/Adobe-Korea1/UniKS-UCS2-V				\
 	cMap/Adobe-Korea1/UniKS-UTF16-H				\
