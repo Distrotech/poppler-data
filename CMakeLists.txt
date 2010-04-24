@@ -2,298 +2,298 @@ set(datadir ${CMAKE_INSTALL_PREFIX}/share)
 set(pkgdatadir ${datadir}/poppler)
 
 set(unicode-map-files
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/GBK
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/Big5
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/Shift-JIS
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-2022-KR
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/KOI8-R
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/EUC-CN
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/TIS-620
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/EUC-JP
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-2022-CN
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/Big5ascii
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-2022-JP
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-8859-6
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-8859-7
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-8859-8
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/ISO-8859-9
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/Latin2
-${CMAKE_CURRENT_SOURCE_DIR}/unicodeMap/Windows-1255
+  unicodeMap/GBK
+  unicodeMap/Big5
+  unicodeMap/Shift-JIS
+  unicodeMap/ISO-2022-KR
+  unicodeMap/KOI8-R
+  unicodeMap/EUC-CN
+  unicodeMap/TIS-620
+  unicodeMap/EUC-JP
+  unicodeMap/ISO-2022-CN
+  unicodeMap/Big5ascii
+  unicodeMap/ISO-2022-JP
+  unicodeMap/ISO-8859-6
+  unicodeMap/ISO-8859-7
+  unicodeMap/ISO-8859-8
+  unicodeMap/ISO-8859-9
+  unicodeMap/Latin2
+  unicodeMap/Windows-1255
 )
 install(FILES ${unicode-map-files} DESTINATION ${pkgdatadir}/unicodeMap)
 
 set(cMap-files-AC1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-0
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-3
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-4
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-5
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-B5pc
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-ETenms-B5
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-H-CID
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-H-Host
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-H-Mac
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/Adobe-CNS1-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/B5pc-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/B5pc-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/B5pc-UCS2C
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/B5pc-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS01-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS02-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS03-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS04-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS05-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS06-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS07-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS15-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS1-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS1-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS2-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/CNS-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETen-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETen-B5-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETen-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETenms-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETenms-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETHK-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/ETHK-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKdla-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKdla-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKdlb-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKdlb-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKgccs-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKgccs-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKm314-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKm314-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKm471-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKm471-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKscs-B5-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/HKscs-B5-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UCS2-B5pc
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UCS2-ETen-B5
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UCS2-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UCS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UTF16-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UTF16-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UTF8-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-CNS1/UniCNS-UTF8-V
+  cMap/Adobe-CNS1/Adobe-CNS1-0
+  cMap/Adobe-CNS1/Adobe-CNS1-1
+  cMap/Adobe-CNS1/Adobe-CNS1-2
+  cMap/Adobe-CNS1/Adobe-CNS1-3
+  cMap/Adobe-CNS1/Adobe-CNS1-4
+  cMap/Adobe-CNS1/Adobe-CNS1-5
+  cMap/Adobe-CNS1/Adobe-CNS1-B5pc
+  cMap/Adobe-CNS1/Adobe-CNS1-ETenms-B5
+  cMap/Adobe-CNS1/Adobe-CNS1-H-CID
+  cMap/Adobe-CNS1/Adobe-CNS1-H-Host
+  cMap/Adobe-CNS1/Adobe-CNS1-H-Mac
+  cMap/Adobe-CNS1/Adobe-CNS1-UCS2
+  cMap/Adobe-CNS1/B5-H
+  cMap/Adobe-CNS1/B5pc-H
+  cMap/Adobe-CNS1/B5pc-UCS2
+  cMap/Adobe-CNS1/B5pc-UCS2C
+  cMap/Adobe-CNS1/B5pc-V
+  cMap/Adobe-CNS1/B5-V
+  cMap/Adobe-CNS1/CNS01-RKSJ-H
+  cMap/Adobe-CNS1/CNS02-RKSJ-H
+  cMap/Adobe-CNS1/CNS03-RKSJ-H
+  cMap/Adobe-CNS1/CNS04-RKSJ-H
+  cMap/Adobe-CNS1/CNS05-RKSJ-H
+  cMap/Adobe-CNS1/CNS06-RKSJ-H
+  cMap/Adobe-CNS1/CNS07-RKSJ-H
+  cMap/Adobe-CNS1/CNS15-RKSJ-H
+  cMap/Adobe-CNS1/CNS1-H
+  cMap/Adobe-CNS1/CNS1-V
+  cMap/Adobe-CNS1/CNS2-H
+  cMap/Adobe-CNS1/CNS2-V
+  cMap/Adobe-CNS1/CNS-EUC-H
+  cMap/Adobe-CNS1/CNS-EUC-V
+  cMap/Adobe-CNS1/ETen-B5-H
+  cMap/Adobe-CNS1/ETen-B5-UCS2
+  cMap/Adobe-CNS1/ETen-B5-V
+  cMap/Adobe-CNS1/ETenms-B5-H
+  cMap/Adobe-CNS1/ETenms-B5-V
+  cMap/Adobe-CNS1/ETHK-B5-H
+  cMap/Adobe-CNS1/ETHK-B5-V
+  cMap/Adobe-CNS1/HKdla-B5-H
+  cMap/Adobe-CNS1/HKdla-B5-V
+  cMap/Adobe-CNS1/HKdlb-B5-H
+  cMap/Adobe-CNS1/HKdlb-B5-V
+  cMap/Adobe-CNS1/HKgccs-B5-H
+  cMap/Adobe-CNS1/HKgccs-B5-V
+  cMap/Adobe-CNS1/HKm314-B5-H
+  cMap/Adobe-CNS1/HKm314-B5-V
+  cMap/Adobe-CNS1/HKm471-B5-H
+  cMap/Adobe-CNS1/HKm471-B5-V
+  cMap/Adobe-CNS1/HKscs-B5-H
+  cMap/Adobe-CNS1/HKscs-B5-V
+  cMap/Adobe-CNS1/UCS2-B5pc
+  cMap/Adobe-CNS1/UCS2-ETen-B5
+  cMap/Adobe-CNS1/UniCNS-UCS2-H
+  cMap/Adobe-CNS1/UniCNS-UCS2-V
+  cMap/Adobe-CNS1/UniCNS-UTF16-H
+  cMap/Adobe-CNS1/UniCNS-UTF16-V
+  cMap/Adobe-CNS1/UniCNS-UTF32-H
+  cMap/Adobe-CNS1/UniCNS-UTF32-V
+  cMap/Adobe-CNS1/UniCNS-UTF8-H
+  cMap/Adobe-CNS1/UniCNS-UTF8-V
 )
 install(FILES ${cMap-files-AC1} DESTINATION ${pkgdatadir}/cMap/Adobe-CNS1)
 
 set(cMap-files-AG1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-0
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-3
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-4
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-5
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-GBK-EUC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-GBpc-EUC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-H-CID
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-H-Host
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-H-Mac
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/Adobe-GB1-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GB-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GB-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GB-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBK2K-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBK2K-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBK-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBK-EUC-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBK-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBKp-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBKp-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBpc-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBpc-EUC-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBpc-EUC-UCS2C
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBpc-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GB-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBT-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBT-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBT-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBTpc-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBTpc-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBT-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GBT-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/GB-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UCS2-GBK-EUC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UCS2-GBpc-EUC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UCS2-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UCS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UTF16-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UTF16-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UTF8-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-GB1/UniGB-UTF8-V
+  cMap/Adobe-GB1/Adobe-GB1-0
+  cMap/Adobe-GB1/Adobe-GB1-1
+  cMap/Adobe-GB1/Adobe-GB1-2
+  cMap/Adobe-GB1/Adobe-GB1-3
+  cMap/Adobe-GB1/Adobe-GB1-4
+  cMap/Adobe-GB1/Adobe-GB1-5
+  cMap/Adobe-GB1/Adobe-GB1-GBK-EUC
+  cMap/Adobe-GB1/Adobe-GB1-GBpc-EUC
+  cMap/Adobe-GB1/Adobe-GB1-H-CID
+  cMap/Adobe-GB1/Adobe-GB1-H-Host
+  cMap/Adobe-GB1/Adobe-GB1-H-Mac
+  cMap/Adobe-GB1/Adobe-GB1-UCS2
+  cMap/Adobe-GB1/GB-EUC-H
+  cMap/Adobe-GB1/GB-EUC-V
+  cMap/Adobe-GB1/GB-H
+  cMap/Adobe-GB1/GBK2K-H
+  cMap/Adobe-GB1/GBK2K-V
+  cMap/Adobe-GB1/GBK-EUC-H
+  cMap/Adobe-GB1/GBK-EUC-UCS2
+  cMap/Adobe-GB1/GBK-EUC-V
+  cMap/Adobe-GB1/GBKp-EUC-H
+  cMap/Adobe-GB1/GBKp-EUC-V
+  cMap/Adobe-GB1/GBpc-EUC-H
+  cMap/Adobe-GB1/GBpc-EUC-UCS2
+  cMap/Adobe-GB1/GBpc-EUC-UCS2C
+  cMap/Adobe-GB1/GBpc-EUC-V
+  cMap/Adobe-GB1/GB-RKSJ-H
+  cMap/Adobe-GB1/GBT-EUC-H
+  cMap/Adobe-GB1/GBT-EUC-V
+  cMap/Adobe-GB1/GBT-H
+  cMap/Adobe-GB1/GBTpc-EUC-H
+  cMap/Adobe-GB1/GBTpc-EUC-V
+  cMap/Adobe-GB1/GBT-RKSJ-H
+  cMap/Adobe-GB1/GBT-V
+  cMap/Adobe-GB1/GB-V
+  cMap/Adobe-GB1/UCS2-GBK-EUC
+  cMap/Adobe-GB1/UCS2-GBpc-EUC
+  cMap/Adobe-GB1/UniGB-UCS2-H
+  cMap/Adobe-GB1/UniGB-UCS2-V
+  cMap/Adobe-GB1/UniGB-UTF16-H
+  cMap/Adobe-GB1/UniGB-UTF16-V
+  cMap/Adobe-GB1/UniGB-UTF32-H
+  cMap/Adobe-GB1/UniGB-UTF32-V
+  cMap/Adobe-GB1/UniGB-UTF8-H
+  cMap/Adobe-GB1/UniGB-UTF8-V
 )
 install(FILES ${cMap-files-AG1} DESTINATION ${pkgdatadir}/cMap/Adobe-GB1)
 
 set(cMap-files-AH1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-HongKong1/HK-RKSJ-H
+  cMap/Adobe-HongKong1/HK-RKSJ-H
 )
 install(FILES ${cMap-files-AH1} DESTINATION ${pkgdatadir}/cMap/Adobe-HongKong1)
 
 set(cMap-files-AJ1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78ms-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78ms-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/78-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/83pv-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90msp-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90msp-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90ms-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90ms-RKSJ-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90ms-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90pv-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90pv-RKSJ-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90pv-RKSJ-UCS2C
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/90pv-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Add-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Add-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Add-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Add-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-0
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-3
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-4
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-5
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-6
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-90ms-RKSJ
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-90pv-RKSJ
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-H-CID
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-H-Host
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-H-Mac
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-PS-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-PS-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan1-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Adobe-Japan2-0
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Ext-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Ext-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Ext-RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Ext-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hankaku
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hiragana
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hojo-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hojo-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hojo-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hojo-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Hojo-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Katakana
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/NWP-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/NWP-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/RKSJ-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/Roman
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UCS2-90ms-RKSJ
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UCS2-90pv-RKSJ
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UCS2-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UCS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UTF16-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UTF16-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UTF8-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniHojo-UTF8-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS2004-UTF16-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS2004-UTF16-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS2004-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS2004-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS2004-UTF8-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS2004-UTF8-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISPro-UCS2-HW-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISPro-UCS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISPro-UTF8-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UCS2-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UCS2-HW-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UCS2-HW-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UCS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UTF16-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UTF16-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UTF8-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJIS-UTF8-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISX02132004-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISX02132004-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISX0213-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/UniJISX0213-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Japan1/WP-Symbol
+  cMap/Adobe-Japan1/78-EUC-H
+  cMap/Adobe-Japan1/78-EUC-V
+  cMap/Adobe-Japan1/78-H
+  cMap/Adobe-Japan1/78ms-RKSJ-H
+  cMap/Adobe-Japan1/78ms-RKSJ-V
+  cMap/Adobe-Japan1/78-RKSJ-H
+  cMap/Adobe-Japan1/78-RKSJ-V
+  cMap/Adobe-Japan1/78-V
+  cMap/Adobe-Japan1/83pv-RKSJ-H
+  cMap/Adobe-Japan1/90msp-RKSJ-H
+  cMap/Adobe-Japan1/90msp-RKSJ-V
+  cMap/Adobe-Japan1/90ms-RKSJ-H
+  cMap/Adobe-Japan1/90ms-RKSJ-UCS2
+  cMap/Adobe-Japan1/90ms-RKSJ-V
+  cMap/Adobe-Japan1/90pv-RKSJ-H
+  cMap/Adobe-Japan1/90pv-RKSJ-UCS2
+  cMap/Adobe-Japan1/90pv-RKSJ-UCS2C
+  cMap/Adobe-Japan1/90pv-RKSJ-V
+  cMap/Adobe-Japan1/Add-H
+  cMap/Adobe-Japan1/Add-RKSJ-H
+  cMap/Adobe-Japan1/Add-RKSJ-V
+  cMap/Adobe-Japan1/Add-V
+  cMap/Adobe-Japan1/Adobe-Japan1-0
+  cMap/Adobe-Japan1/Adobe-Japan1-1
+  cMap/Adobe-Japan1/Adobe-Japan1-2
+  cMap/Adobe-Japan1/Adobe-Japan1-3
+  cMap/Adobe-Japan1/Adobe-Japan1-4
+  cMap/Adobe-Japan1/Adobe-Japan1-5
+  cMap/Adobe-Japan1/Adobe-Japan1-6
+  cMap/Adobe-Japan1/Adobe-Japan1-90ms-RKSJ
+  cMap/Adobe-Japan1/Adobe-Japan1-90pv-RKSJ
+  cMap/Adobe-Japan1/Adobe-Japan1-H-CID
+  cMap/Adobe-Japan1/Adobe-Japan1-H-Host
+  cMap/Adobe-Japan1/Adobe-Japan1-H-Mac
+  cMap/Adobe-Japan1/Adobe-Japan1-PS-H
+  cMap/Adobe-Japan1/Adobe-Japan1-PS-V
+  cMap/Adobe-Japan1/Adobe-Japan1-UCS2
+  cMap/Adobe-Japan1/Adobe-Japan2-0
+  cMap/Adobe-Japan1/EUC-H
+  cMap/Adobe-Japan1/EUC-V
+  cMap/Adobe-Japan1/Ext-H
+  cMap/Adobe-Japan1/Ext-RKSJ-H
+  cMap/Adobe-Japan1/Ext-RKSJ-V
+  cMap/Adobe-Japan1/Ext-V
+  cMap/Adobe-Japan1/H
+  cMap/Adobe-Japan1/Hankaku
+  cMap/Adobe-Japan1/Hiragana
+  cMap/Adobe-Japan1/Hojo-EUC-H
+  cMap/Adobe-Japan1/Hojo-EUC-V
+  cMap/Adobe-Japan1/Hojo-H
+  cMap/Adobe-Japan1/Hojo-RKSJ-H
+  cMap/Adobe-Japan1/Hojo-V
+  cMap/Adobe-Japan1/Katakana
+  cMap/Adobe-Japan1/NWP-H
+  cMap/Adobe-Japan1/NWP-V
+  cMap/Adobe-Japan1/RKSJ-H
+  cMap/Adobe-Japan1/RKSJ-V
+  cMap/Adobe-Japan1/Roman
+  cMap/Adobe-Japan1/UCS2-90ms-RKSJ
+  cMap/Adobe-Japan1/UCS2-90pv-RKSJ
+  cMap/Adobe-Japan1/UniHojo-UCS2-H
+  cMap/Adobe-Japan1/UniHojo-UCS2-V
+  cMap/Adobe-Japan1/UniHojo-UTF16-H
+  cMap/Adobe-Japan1/UniHojo-UTF16-V
+  cMap/Adobe-Japan1/UniHojo-UTF32-H
+  cMap/Adobe-Japan1/UniHojo-UTF32-V
+  cMap/Adobe-Japan1/UniHojo-UTF8-H
+  cMap/Adobe-Japan1/UniHojo-UTF8-V
+  cMap/Adobe-Japan1/UniJIS2004-UTF16-H
+  cMap/Adobe-Japan1/UniJIS2004-UTF16-V
+  cMap/Adobe-Japan1/UniJIS2004-UTF32-H
+  cMap/Adobe-Japan1/UniJIS2004-UTF32-V
+  cMap/Adobe-Japan1/UniJIS2004-UTF8-H
+  cMap/Adobe-Japan1/UniJIS2004-UTF8-V
+  cMap/Adobe-Japan1/UniJISPro-UCS2-HW-V
+  cMap/Adobe-Japan1/UniJISPro-UCS2-V
+  cMap/Adobe-Japan1/UniJISPro-UTF8-V
+  cMap/Adobe-Japan1/UniJIS-UCS2-H
+  cMap/Adobe-Japan1/UniJIS-UCS2-HW-H
+  cMap/Adobe-Japan1/UniJIS-UCS2-HW-V
+  cMap/Adobe-Japan1/UniJIS-UCS2-V
+  cMap/Adobe-Japan1/UniJIS-UTF16-H
+  cMap/Adobe-Japan1/UniJIS-UTF16-V
+  cMap/Adobe-Japan1/UniJIS-UTF32-H
+  cMap/Adobe-Japan1/UniJIS-UTF32-V
+  cMap/Adobe-Japan1/UniJIS-UTF8-H
+  cMap/Adobe-Japan1/UniJIS-UTF8-V
+  cMap/Adobe-Japan1/UniJISX02132004-UTF32-H
+  cMap/Adobe-Japan1/UniJISX02132004-UTF32-V
+  cMap/Adobe-Japan1/UniJISX0213-UTF32-H
+  cMap/Adobe-Japan1/UniJISX0213-UTF32-V
+  cMap/Adobe-Japan1/V
+  cMap/Adobe-Japan1/WP-Symbol
 )
 install(FILES ${cMap-files-AJ1} DESTINATION ${pkgdatadir}/cMap/Adobe-Japan1)
 
 set(cMap-files-AK1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-0
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-H-CID
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-H-Host
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-H-Mac
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-KSCms-UHC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-KSCpc-EUC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/Adobe-Korea1-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC2-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-Johab-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-Johab-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCms-UHC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCms-UHC-HW-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCms-UHC-HW-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCms-UHC-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCms-UHC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCpc-EUC-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCpc-EUC-UCS2
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCpc-EUC-UCS2C
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSCpc-EUC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-RKSJ-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/KSC-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UCS2-KSCms-UHC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UCS2-KSCpc-EUC
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UCS2-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UCS2-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UTF16-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UTF16-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UTF32-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UTF32-V
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UTF8-H
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Korea1/UniKS-UTF8-V
+  cMap/Adobe-Korea1/Adobe-Korea1-0
+  cMap/Adobe-Korea1/Adobe-Korea1-1
+  cMap/Adobe-Korea1/Adobe-Korea1-2
+  cMap/Adobe-Korea1/Adobe-Korea1-H-CID
+  cMap/Adobe-Korea1/Adobe-Korea1-H-Host
+  cMap/Adobe-Korea1/Adobe-Korea1-H-Mac
+  cMap/Adobe-Korea1/Adobe-Korea1-KSCms-UHC
+  cMap/Adobe-Korea1/Adobe-Korea1-KSCpc-EUC
+  cMap/Adobe-Korea1/Adobe-Korea1-UCS2
+  cMap/Adobe-Korea1/KSC2-RKSJ-H
+  cMap/Adobe-Korea1/KSC-EUC-H
+  cMap/Adobe-Korea1/KSC-EUC-V
+  cMap/Adobe-Korea1/KSC-H
+  cMap/Adobe-Korea1/KSC-Johab-H
+  cMap/Adobe-Korea1/KSC-Johab-V
+  cMap/Adobe-Korea1/KSCms-UHC-H
+  cMap/Adobe-Korea1/KSCms-UHC-HW-H
+  cMap/Adobe-Korea1/KSCms-UHC-HW-V
+  cMap/Adobe-Korea1/KSCms-UHC-UCS2
+  cMap/Adobe-Korea1/KSCms-UHC-V
+  cMap/Adobe-Korea1/KSCpc-EUC-H
+  cMap/Adobe-Korea1/KSCpc-EUC-UCS2
+  cMap/Adobe-Korea1/KSCpc-EUC-UCS2C
+  cMap/Adobe-Korea1/KSCpc-EUC-V
+  cMap/Adobe-Korea1/KSC-RKSJ-H
+  cMap/Adobe-Korea1/KSC-V
+  cMap/Adobe-Korea1/UCS2-KSCms-UHC
+  cMap/Adobe-Korea1/UCS2-KSCpc-EUC
+  cMap/Adobe-Korea1/UniKS-UCS2-H
+  cMap/Adobe-Korea1/UniKS-UCS2-V
+  cMap/Adobe-Korea1/UniKS-UTF16-H
+  cMap/Adobe-Korea1/UniKS-UTF16-V
+  cMap/Adobe-Korea1/UniKS-UTF32-H
+  cMap/Adobe-Korea1/UniKS-UTF32-V
+  cMap/Adobe-Korea1/UniKS-UTF8-H
+  cMap/Adobe-Korea1/UniKS-UTF8-V
 )
 install(FILES ${cMap-files-AK1} DESTINATION ${pkgdatadir}/cMap/Adobe-Korea1)
 
 set(cMap-files-AV1
-${CMAKE_CURRENT_SOURCE_DIR}/cMap/Adobe-Vietnam1/TCVN-RKSJ-H
+  cMap/Adobe-Vietnam1/TCVN-RKSJ-H
 )
 install(FILES ${cMap-files-AV1} DESTINATION ${pkgdatadir}/cMap/Adobe-Vietnam1)
 
 set(name-to-unicode-files
-${CMAKE_CURRENT_SOURCE_DIR}/nameToUnicode/Thai
-${CMAKE_CURRENT_SOURCE_DIR}/nameToUnicode/Bulgarian
-${CMAKE_CURRENT_SOURCE_DIR}/nameToUnicode/Greek
+  nameToUnicode/Thai
+  nameToUnicode/Bulgarian
+  nameToUnicode/Greek
 )
 install(FILES ${name-to-unicode-files} DESTINATION ${pkgdatadir}/nameToUnicode)
 
 set(cid-to-unicode-files
-${CMAKE_CURRENT_SOURCE_DIR}/cidToUnicode/Adobe-GB1
-${CMAKE_CURRENT_SOURCE_DIR}/cidToUnicode/Adobe-CNS1
-${CMAKE_CURRENT_SOURCE_DIR}/cidToUnicode/Adobe-Japan1
-${CMAKE_CURRENT_SOURCE_DIR}/cidToUnicode/Adobe-Korea1
+  cidToUnicode/Adobe-GB1
+  cidToUnicode/Adobe-CNS1
+  cidToUnicode/Adobe-Japan1
+  cidToUnicode/Adobe-Korea1
 )
 install(FILES ${cid-to-unicode-files} DESTINATION ${pkgdatadir}/cidToUnicode)
