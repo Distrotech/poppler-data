@@ -2,22 +2,22 @@ set(datadir ${CMAKE_INSTALL_PREFIX}/share)
 set(pkgdatadir ${datadir}/poppler)
 
 set(unicode-map-files
-  unicodeMap/GBK
   unicodeMap/Big5
-  unicodeMap/Shift-JIS
-  unicodeMap/ISO-2022-KR
-  unicodeMap/KOI8-R
-  unicodeMap/EUC-CN
-  unicodeMap/TIS-620
-  unicodeMap/EUC-JP
-  unicodeMap/ISO-2022-CN
   unicodeMap/Big5ascii
+  unicodeMap/EUC-CN
+  unicodeMap/EUC-JP
+  unicodeMap/GBK
+  unicodeMap/ISO-2022-CN
   unicodeMap/ISO-2022-JP
+  unicodeMap/ISO-2022-KR
   unicodeMap/ISO-8859-6
   unicodeMap/ISO-8859-7
   unicodeMap/ISO-8859-8
   unicodeMap/ISO-8859-9
+  unicodeMap/KOI8-R
   unicodeMap/Latin2
+  unicodeMap/Shift-JIS
+  unicodeMap/TIS-620
   unicodeMap/Windows-1255
 )
 install(FILES ${unicode-map-files} DESTINATION ${pkgdatadir}/unicodeMap)
@@ -29,8 +29,9 @@ set(cMap-files-AC1
   cMap/Adobe-CNS1/Adobe-CNS1-3
   cMap/Adobe-CNS1/Adobe-CNS1-4
   cMap/Adobe-CNS1/Adobe-CNS1-5
+  cMap/Adobe-CNS1/Adobe-CNS1-6
   cMap/Adobe-CNS1/Adobe-CNS1-B5pc
-  cMap/Adobe-CNS1/Adobe-CNS1-ETenms-B5
+  cMap/Adobe-CNS1/Adobe-CNS1-ETen-B5
   cMap/Adobe-CNS1/Adobe-CNS1-H-CID
   cMap/Adobe-CNS1/Adobe-CNS1-H-Host
   cMap/Adobe-CNS1/Adobe-CNS1-H-Mac
@@ -41,14 +42,6 @@ set(cMap-files-AC1
   cMap/Adobe-CNS1/B5pc-UCS2C
   cMap/Adobe-CNS1/B5pc-V
   cMap/Adobe-CNS1/B5-V
-  cMap/Adobe-CNS1/CNS01-RKSJ-H
-  cMap/Adobe-CNS1/CNS02-RKSJ-H
-  cMap/Adobe-CNS1/CNS03-RKSJ-H
-  cMap/Adobe-CNS1/CNS04-RKSJ-H
-  cMap/Adobe-CNS1/CNS05-RKSJ-H
-  cMap/Adobe-CNS1/CNS06-RKSJ-H
-  cMap/Adobe-CNS1/CNS07-RKSJ-H
-  cMap/Adobe-CNS1/CNS15-RKSJ-H
   cMap/Adobe-CNS1/CNS1-H
   cMap/Adobe-CNS1/CNS1-V
   cMap/Adobe-CNS1/CNS2-H
@@ -114,13 +107,11 @@ set(cMap-files-AG1
   cMap/Adobe-GB1/GBpc-EUC-UCS2
   cMap/Adobe-GB1/GBpc-EUC-UCS2C
   cMap/Adobe-GB1/GBpc-EUC-V
-  cMap/Adobe-GB1/GB-RKSJ-H
   cMap/Adobe-GB1/GBT-EUC-H
   cMap/Adobe-GB1/GBT-EUC-V
   cMap/Adobe-GB1/GBT-H
   cMap/Adobe-GB1/GBTpc-EUC-H
   cMap/Adobe-GB1/GBTpc-EUC-V
-  cMap/Adobe-GB1/GBT-RKSJ-H
   cMap/Adobe-GB1/GBT-V
   cMap/Adobe-GB1/GB-V
   cMap/Adobe-GB1/UCS2-GBK-EUC
@@ -135,11 +126,6 @@ set(cMap-files-AG1
   cMap/Adobe-GB1/UniGB-UTF8-V
 )
 install(FILES ${cMap-files-AG1} DESTINATION ${pkgdatadir}/cMap/Adobe-GB1)
-
-set(cMap-files-AH1
-  cMap/Adobe-HongKong1/HK-RKSJ-H
-)
-install(FILES ${cMap-files-AH1} DESTINATION ${pkgdatadir}/cMap/Adobe-HongKong1)
 
 set(cMap-files-AJ1
   cMap/Adobe-Japan1/78-EUC-H
@@ -179,7 +165,6 @@ set(cMap-files-AJ1
   cMap/Adobe-Japan1/Adobe-Japan1-PS-H
   cMap/Adobe-Japan1/Adobe-Japan1-PS-V
   cMap/Adobe-Japan1/Adobe-Japan1-UCS2
-  cMap/Adobe-Japan1/Adobe-Japan2-0
   cMap/Adobe-Japan1/EUC-H
   cMap/Adobe-Japan1/EUC-V
   cMap/Adobe-Japan1/Ext-H
@@ -192,7 +177,6 @@ set(cMap-files-AJ1
   cMap/Adobe-Japan1/Hojo-EUC-H
   cMap/Adobe-Japan1/Hojo-EUC-V
   cMap/Adobe-Japan1/Hojo-H
-  cMap/Adobe-Japan1/Hojo-RKSJ-H
   cMap/Adobe-Japan1/Hojo-V
   cMap/Adobe-Japan1/Katakana
   cMap/Adobe-Japan1/NWP-H
@@ -238,6 +222,11 @@ set(cMap-files-AJ1
 )
 install(FILES ${cMap-files-AJ1} DESTINATION ${pkgdatadir}/cMap/Adobe-Japan1)
 
+set(cMap-files-AJ2
+  cMap/Adobe-Japan2/Adobe-Japan2-0
+)
+install(FILES ${cMap-files-AJ2} DESTINATION ${pkgdatadir}/cMap/Adobe-Japan2)
+
 set(cMap-files-AK1
   cMap/Adobe-Korea1/Adobe-Korea1-0
   cMap/Adobe-Korea1/Adobe-Korea1-1
@@ -248,7 +237,6 @@ set(cMap-files-AK1
   cMap/Adobe-Korea1/Adobe-Korea1-KSCms-UHC
   cMap/Adobe-Korea1/Adobe-Korea1-KSCpc-EUC
   cMap/Adobe-Korea1/Adobe-Korea1-UCS2
-  cMap/Adobe-Korea1/KSC2-RKSJ-H
   cMap/Adobe-Korea1/KSC-EUC-H
   cMap/Adobe-Korea1/KSC-EUC-V
   cMap/Adobe-Korea1/KSC-H
@@ -263,7 +251,6 @@ set(cMap-files-AK1
   cMap/Adobe-Korea1/KSCpc-EUC-UCS2
   cMap/Adobe-Korea1/KSCpc-EUC-UCS2C
   cMap/Adobe-Korea1/KSCpc-EUC-V
-  cMap/Adobe-Korea1/KSC-RKSJ-H
   cMap/Adobe-Korea1/KSC-V
   cMap/Adobe-Korea1/UCS2-KSCms-UHC
   cMap/Adobe-Korea1/UCS2-KSCpc-EUC
@@ -278,15 +265,10 @@ set(cMap-files-AK1
 )
 install(FILES ${cMap-files-AK1} DESTINATION ${pkgdatadir}/cMap/Adobe-Korea1)
 
-set(cMap-files-AV1
-  cMap/Adobe-Vietnam1/TCVN-RKSJ-H
-)
-install(FILES ${cMap-files-AV1} DESTINATION ${pkgdatadir}/cMap/Adobe-Vietnam1)
-
 set(name-to-unicode-files
-  nameToUnicode/Thai
   nameToUnicode/Bulgarian
   nameToUnicode/Greek
+  nameToUnicode/Thai
 )
 install(FILES ${name-to-unicode-files} DESTINATION ${pkgdatadir}/nameToUnicode)
 
