@@ -297,6 +297,7 @@ DISTFILES =					\
 	COPYING					\
 	COPYING.adobe				\
 	COPYING.gpl2				\
+	CMakeLists.txt				\
 	$(unicode-map-files)			\
 	$(cmap-files)				\
 	$(name-to-unicode-files)		\
