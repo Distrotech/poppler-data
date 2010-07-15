@@ -3,7 +3,7 @@
 %%IncludeResource: ProcSet (CIDInit)
 %%BeginResource: CMap (UniJIS-UTF8-H)
 %%Title: (UniJIS-UTF8-H Adobe Japan1 6)
-%%Version: 13.012
+%%Version: 13.013
 %%Copyright: -----------------------------------------------------------
 %%Copyright: Copyright 1990-2010 Adobe Systems Incorporated.
 %%Copyright: All rights reserved.
@@ -55,7 +55,7 @@ begincmap
 end def
 
 /CMapName /UniJIS-UTF8-H def
-/CMapVersion 13.012 def
+/CMapVersion 13.013 def
 /CMapType 1 def
 
 /XUID [1 10 25359] def
@@ -13566,7 +13566,7 @@ endcidchar
 <f0a8b89f> 18886
 endcidchar
 
-85 begincidchar
+100 begincidchar
 <f0a8b8b6> 18890
 <f0a8ba89> 18893
 <f0a8bbab> 18895
@@ -13607,6 +13607,31 @@ endcidchar
 <f0aa989a> 20316
 <f0aa9ab2> 19129
 <f0aaa7a6> 14145
+<f0ab9d86> 13780
+<f0ab9d91> 13866
+<f0ab9d93> 20088
+<f0ab9d9a> 20096
+<f0ab9d9c> 20097
+<f0ab9da5> 20247
+<f0ab9db6> 20114
+<f0ab9db7> 13782
+<f0ab9dbc> 20125
+<f0ab9e82> 20141
+<f0ab9e89> 14064
+<f0ab9e8b> 20149
+<f0ab9e8e> 13724
+<f0ab9e94> 20153
+<f0ab9eac> 20176
+<f0ab9eaf> 20180
+<f0ab9ebd> 14174
+<f0ab9f89> 20194
+<f0ab9f8f> 20201
+<f0ab9f92> 20204
+<f0ab9f98> 13651
+<f0ab9fb0> 20240
+<f0aba08d> 20256
+<f0aba097> 20260
+<f0aba09a> 14278
 <f0afa084> 15388
 <f0afa08f> 7814
 <f0afa095> 20061
@@ -13642,6 +13667,9 @@ endcidchar
 <f0afa48b> 13801
 <f0afa48f> 13932
 <f0afa49a> 13916
+endcidchar
+
+10 begincidchar
 <f0afa4a0> 7839
 <f0afa4a1> 13809
 <f0afa585> 13357
