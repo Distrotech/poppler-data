@@ -1,5 +1,5 @@
 PACKAGE    = poppler-data
-VERSION    = 0.4.2
+VERSION    = 0.4.3
 distdir    = $(PACKAGE)-$(VERSION)
 prefix     = /usr/local
 datadir    = $(prefix)/share
